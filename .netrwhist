@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb/framework'
+let g:netrw_dirhist_2='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb'
+let g:netrw_dirhist_1='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb/framework'
+let g:netrw_dirhist_0='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb'
+let g:netrw_dirhist_9='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb/framework'
+let g:netrw_dirhist_8='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb'
+let g:netrw_dirhist_7='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb/app/views/trilla/terceros'
+let g:netrw_dirhist_6='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb/app/views/trilla'
+let g:netrw_dirhist_5='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb/app/views'
+let g:netrw_dirhist_4='/home/developer/developer/proyectos/htdocs/erpflora/beneficioweb/app'
