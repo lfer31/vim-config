@@ -17,9 +17,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion' 
 Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
+Plug 'yggdroot/indentline'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'preservim/nerdcommenter'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
@@ -34,6 +39,7 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+" instalacion en ubuntu:  apt-get install silversearcher-ag
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -48,7 +54,9 @@ Plug 'sainnhe/sonokai'
 Plug 'morhetz/gruvbox'
 
 call plug#end()
-" extensiones for airline	
+filetype plugin indent on
+
+"" extensiones for airline	
 let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -64,6 +72,9 @@ let mapleader = " "
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <Leader>f :Files<CR>
+nmap <Leader>g :Ag<CR>
+" removes highlighting of search terms
+nnoremap <leader><space> :nohlsearch<CR>
 
 " colorscheme sonokai
 colorscheme gruvbox
