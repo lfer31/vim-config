@@ -6,12 +6,13 @@ set mouse=a
 set clipboard=unnamed
 set encoding=UTF-8
 set showmatch
-set ts=4
-set sw=4
+set ts=2
+set sw=2
 set smarttab
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'github/copilot.vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-easy-align'
@@ -74,7 +75,12 @@ nmap <C-n> :NERDTreeToggle<CR>
 nmap <Leader>f :Files<CR>
 nmap <Leader>g :Ag<CR>
 " removes highlighting of search terms
-nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>, :nohlsearch<CR>
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " colorscheme sonokai
 colorscheme gruvbox
