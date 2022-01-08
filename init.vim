@@ -16,41 +16,43 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'github/copilot.vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
+" para el editor
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion' 
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 Plug 'yggdroot/indentline'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
-" post install (yarn install | npm install) then load plugin only for editing supported files
-" Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
-
+" temas bonitos para la barra de abajo
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" un comentador para vim
 Plug 'preservim/nerdcommenter'
-" Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
+" snippsets, se pueden agregarle más o editar propio para lo que quieras utilizar
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'chrisgillis/vim-bootstrap3-snippets'
 
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
 " Plug 'fatih/vim-go', { 'tag': '*' }
+" Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
-Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
+" súper buscador
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " instalacion en ubuntu:  apt-get install silversearcher-ag
 
+" para autocompletado cool
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'powerline/powerline'
 
+" plugin para un árbol de archivos
 Plug 'preservim/nerdtree' |
 			\ Plug 'Xuyuanp/nerdtree-git-plugin' |
 			\ Plug 'ryanoasis/vim-devicons'
